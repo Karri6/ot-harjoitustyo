@@ -1,2 +1,5 @@
-"# Ohjelmistotekniikka, harjoitusty”" 
-" Kurssilla toteutetaan harjoitusty”n„ projekti, jonka aiheeksi olen valinnut **liikunta/harjoittelu p„iv„kirja**. Projekti toteutetaan Python kielell„." 
+# Ohjelmistotekniikka, harjoitustyÃ¶ 
+Kurssilla toteutetaan harjoitustyÃ¶nÃ¤ projekti, jonka aiheeksi olen valinnut **liikunta/harjoittelu pÃ¤ivÃ¤kirja**. Projekti toteutetaan Python kielellÃ¤.
+
+Linkki laskarit alihakemistoon:
+[laskarit](laskarit)
