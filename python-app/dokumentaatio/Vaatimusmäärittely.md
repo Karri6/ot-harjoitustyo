@@ -7,6 +7,6 @@
 ## Toiminnallisuus
 
 ### Käyttöliittymäluonnos
-[Luonnoksen kuva](python-app/dokumentaatio/käyttöliittymäluonnos.png)
+[Luonnoksen kuva](käyttöliittymäluonnos.png)
 
 ## Muita huomioita
