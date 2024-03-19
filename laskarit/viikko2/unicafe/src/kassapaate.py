@@ -41,7 +41,13 @@ class Kassapaate:
             kortti.lataa_rahaa(summa)
             self.kassassa_rahaa += summa
         else:
-            return
+            return summa
 
     def kassassa_rahaa_euroina(self):
         return self.kassassa_rahaa / 100
+
+    def kassa_edulliset(self):
+        return self.edulliset
+    
+    def kassa_maukkaat(self):
+        return self.maukkaat
