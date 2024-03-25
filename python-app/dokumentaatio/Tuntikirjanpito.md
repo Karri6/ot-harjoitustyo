@@ -7,3 +7,4 @@
 | 14.3  | 1    | Vaatimusmäärittely ja käyttöliittymäluonnos |
 | 20.3  | 4   | projektin alustus ja käyttöliittymän 'demo' koodi |
 | 25.3  | 3   | gui demon koodin jatkaminen |
+| 25.3  | 4   | tietojen talletus ja kirjatuminen luonnos |
