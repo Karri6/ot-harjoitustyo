@@ -6,3 +6,6 @@ Kurssilla toteutetaan harjoitustyönä projekti, jonka aiheeksi olen valinnut **
 
 ### Linkki harjoitustyön tuntikirjanpitoon
 [tuntikirjanpito](python-app/dokumentaatio/Tuntikirjanpito.md)
+
+### Changelog linkki
+[changelog](python-app/dokumentaatio/changelog.md)
