@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+from event_handlers import login_handler
 
 class LoginView(ttk.Frame):
     """
@@ -28,5 +29,7 @@ class LoginView(ttk.Frame):
         self.signup_button.place(x=300, y=320, width=120, height=40)
 
     def login(self):
-        messagebox.showinfo("Login", "Login Successful!")
-        self.show_main()
+        if login_handler.login(self.username_entry.get(), self.password_entry.get()):
+            self.show_main()
+        else:
+            messagebox.showinfo("Login Unsuccessful", "Incorrect username or password")

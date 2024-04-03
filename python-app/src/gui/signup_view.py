@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+from objects.user import User
+from event_handlers import json_manager as jsm
 
 
 class SignupView(ttk.Frame):
@@ -45,6 +47,18 @@ class SignupView(ttk.Frame):
         self.back_button.place(x=300, y=450, width=120, height=40)
 
     def signup(self):
+        name = self.fullname_entry.get()
+        age = self.age_entry.get()
+        username = self.username_entry.get()
+        password = self.password_entry.get()
         
-        messagebox.showinfo("Signup Successful", "You have successfully signed up.")
-        self.show_main()
+        if username and password and name and age:
+            if not jsm.check_user(username):
+                new_user = User(name, age, username, password)
+                jsm.save_user(new_user)
+                messagebox.showinfo("Success", "Account created successfully")
+                self.show_main()
+            else:
+                messagebox.showwarning("Exists", "Username already exists. Please choose another.")
+        else:
+            messagebox.showwarning("Missing Information", "Please fill out all fields.")
