@@ -7,6 +7,16 @@ Käyttäjä voi luoda sovellukseen oman tunnuksen, seurata omaa harjoitteluaan, 
 Projekti toteutetaan Python kielellä hyödyntäen yksinkertaista tkinter käyttöliittymää.
 > projektin Python versio on 3.8
 
+## Sovelluksen ajaminen
+
+### Ajaa ohjelman
+> poetry run invoke start
+### Ajaa testit
+> poetry run invoke test
+### Ajaa testikattavuuden raportin
+> poetry run invoke coverage-report
+
+
 
 ### Linkki harjoitustyön tuntikirjanpitoon
 [tuntikirjanpito](python-app/dokumentaatio/Tuntikirjanpito.md)
