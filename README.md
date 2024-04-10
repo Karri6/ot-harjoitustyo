@@ -10,14 +10,17 @@ Projekti toteutetaan Python kielellä hyödyntäen yksinkertaista tkinter käytt
 ## Sovelluksen ajaminen
 
 ### Ajaa ohjelman
+```
 poetry run invoke start 
-
+```
 ### Ajaa testit
+```
 poetry run invoke test 
-
+```
 ### Ajaa testikattavuuden raportin
+```
 poetry run invoke coverage-report
-
+```
 
 
 ### Linkki harjoitustyön tuntikirjanpitoon
