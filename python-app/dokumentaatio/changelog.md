@@ -6,4 +6,9 @@
 - Käyttäjä voi kirjautua sisään tai luoda uuden tunnuksen
 
 ### Kurssin viikko 4
-- 
+- Käyttäjä voi valita 'harjoitus elementtejä'
+- Käyttäjä voi kirjata lisätietoja valittuun elementtiin
+- Käyttäjä voi tallentaa luodun harjoituksen
+
+### Kurssin viikko 5
+
