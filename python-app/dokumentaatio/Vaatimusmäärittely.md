@@ -9,13 +9,13 @@ Sovellus on tarkoitettu henkilökohtaiseen kirjanpitoon, eikä todennäköisesti
 
 ## Toiminnallisuus
 
-### Kirjautuminen
-_**Uusi**-käyttäjä_ voi luoda sovellukseen uuden käyttäjätunnuksen, sovellus tarkistaa onko käyttäjää olemassa.
+### Kirjautuminen (tehty)
+- **Uusi**-käyttäjä_ voi luoda sovellukseen uuden käyttäjätunnuksen, sovellus tarkistaa onko käyttäjää olemassa. 
 - Jos käyttäjä on olemassa, hylätään käyttäjän ehdottama käyttäjänimi ja pyydetään esittämään uusi.
 - Jos käyttäjä ei ole olemassa, uuden käyttäjän luominen sallitaan.
 
 _**Vanha**-käyttäjä_ voi kirjautua olemassa olevalla tunnuksella ja salasanallaan sisään.
-> huom. projektissa ei tarvitse huolehtia tietoturvasta, täten salasanoja ei sekoiteta hash funtkiolla ja ne tallennetaan suoraan tietokantaan sellaisenaan.
+> huom. projektissa ei tarvitse huolehtia tietoturvasta, täten salasanoja ei sekoiteta hash funtkiolla ja ne tallennetaan suoraan ~tietokantaan~ json-tiedostoon sellaisenaan.
 
 ### Päänäkymä
 Käyttäjä voi tarkastella menneitä tietojaan kahdessa muodossa. 
@@ -34,3 +34,4 @@ Luonnoksessa on neljä näkymää, kirjautuminen, uusi käyttäjä, päänäkym�
 [Luonnoksen kuva](käyttöliittymäluonnos.png)
 
 ## Muita huomioita
+- Tietokannan sijaan tiedon talletus toteutettu json tiedostoilla. 
