@@ -11,5 +11,6 @@
 | 3.4   | 5   | tietojen talletus ja kirjatuminen hiominen ja ensimmäiset testit |
 | 10.4  | 5   | harjoitusten talletuksen toteutuksen aloitus ja git ylläpitoa |
 | 14.4  | 4   | refaktorointia ja päänäkymän listanäkymän toteutus |
+| YHT  | 27   | tuntia |
 
 
