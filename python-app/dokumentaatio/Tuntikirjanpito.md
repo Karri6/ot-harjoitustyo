@@ -12,6 +12,6 @@
 | 10.4  | 5   | harjoitusten talletuksen toteutuksen aloitus ja git ylläpitoa |
 | 14.4  | 4   | refaktorointia ja päänäkymän historia-listan toteutus |
 |14.4   | 2   | pylint, siistiminen ja arkkitehtuuri.md |
-| YHT  | 27   | tuntia |
+| YHT  | 29   | tuntia |
 
 
