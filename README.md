@@ -28,3 +28,6 @@ poetry run invoke coverage-report
 
 ### Changelog linkki
 [changelog](python-app/dokumentaatio/changelog.md)
+
+### Sovelluksen arkkitehtuuri
+[Arkkitehtuuri.md](python-app/dokumentaatio/arkkitehtuuri.md)
