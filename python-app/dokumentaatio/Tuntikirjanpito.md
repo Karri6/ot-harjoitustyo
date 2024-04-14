@@ -10,7 +10,8 @@
 | 25.3  | 4   | tietojen talletus ja kirjatuminen luonnos |
 | 3.4   | 5   | tietojen talletus ja kirjatuminen hiominen ja ensimmäiset testit |
 | 10.4  | 5   | harjoitusten talletuksen toteutuksen aloitus ja git ylläpitoa |
-| 14.4  | 4   | refaktorointia ja päänäkymän listanäkymän toteutus |
+| 14.4  | 4   | refaktorointia ja päänäkymän historia-listan toteutus |
+|14.4   | 2   | pylint, siistiminen ja arkkitehtuuri.md |
 | YHT  | 27   | tuntia |
 
 
