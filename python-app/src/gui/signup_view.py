@@ -1,15 +1,18 @@
-import tkinter as tk
 from tkinter import ttk, messagebox
 from objects.user import User
-from event_handlers import json_manager as jsm
+from event_handlers.json_manager import JsonManager
+from event_handlers.session_manager import Session
 
 
 class SignupView(ttk.Frame):
     """
     Class implements the sign up view for the user to create a new userprofile
     """
+
     def __init__(self, parent, show_login, show_main):
         super().__init__(parent)
+        self.json_manager = JsonManager()
+
         self.show_login = show_login
         self.show_main = show_main
         self.parent = parent
@@ -35,15 +38,18 @@ class SignupView(ttk.Frame):
         self.password_entry = ttk.Entry(self, show="*")
         self.password_entry.place(x=280, y=300, width=160, height=40)
 
-        self.password_confirm_label = ttk.Label(self, text="Confirm\nPassword:")
+        self.password_confirm_label = ttk.Label(
+            self, text="Confirm\nPassword:")
         self.password_confirm_label.place(x=215, y=350, width=60, height=40)
         self.password_confirm_entry = ttk.Entry(self, show="*")
         self.password_confirm_entry.place(x=280, y=350, width=160, height=40)
 
-        self.signup_button = ttk.Button(self, text="Sign Up", command=self.signup)
+        self.signup_button = ttk.Button(
+            self, text="Sign Up", command=self.signup)
         self.signup_button.place(x=300, y=400, width=120, height=40)
 
-        self.back_button = ttk.Button(self, text="Back to Login", command=self.show_login)
+        self.back_button = ttk.Button(
+            self, text="Back to Login", command=self.show_login)
         self.back_button.place(x=300, y=450, width=120, height=40)
 
     def signup(self):
@@ -51,14 +57,18 @@ class SignupView(ttk.Frame):
         age = self.age_entry.get()
         username = self.username_entry.get()
         password = self.password_entry.get()
-        
+
         if username and password and name and age:
-            if not jsm.check_user(username):
+            username = username.lower()
+            if not self.json_manager.check_user(username):
                 new_user = User(name, age, username, password)
-                jsm.save_user(new_user)
+                self.json_manager.save_user(new_user)
+                Session.set_current_user(username)
                 messagebox.showinfo("Success", "Account created successfully")
                 self.show_main()
             else:
-                messagebox.showwarning("Exists", "Username already exists. Please choose another.")
+                messagebox.showwarning(
+                    "Exists", "Username already exists. Please choose another.")
         else:
-            messagebox.showwarning("Missing Information", "Please fill out all fields.")
+            messagebox.showwarning("Missing Information",
+                                   "Please fill out all fields.")

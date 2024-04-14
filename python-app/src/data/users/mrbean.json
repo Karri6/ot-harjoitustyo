@@ -1,0 +1,13 @@
+{
+    "name": "Rowan Atkinson",
+    "age": "69",
+    "username": "mrbean",
+    "password": "teddy",
+    "workouts": [
+        "mrbean_2024-04-14.json",
+        "mrbean_2024-04-14_1.json",
+        "mrbean_2024-04-14_19-47-56.json",
+        "mrbean_2024-04-14_19-48-28.json",
+        "mrbean_2024-04-14_19-48-50.json"
+    ]
+}

@@ -1,30 +1,29 @@
-"""
-handles the login of a user
-"""
-
-import json
 import os
-from objects.user import User
+from event_handlers.json_manager import JsonManager
+from event_handlers.session_manager import Session
 
-USERS_DIR = os.path.join(os.path.dirname(__file__), '..', 'data/users/')
 
-current_user = None
+class LoginManager:
+    USERS_DIR = os.path.join(os.path.dirname(__file__), '..', 'data/users/')
 
-def load_user(username):
-    filepath = os.path.join(USERS_DIR, f"{username}.json")
-    if os.path.exists(filepath):
-        with open(filepath, 'r') as f:
-            user_data = json.load(f)
-            return User.from_json(user_data)
-    return None
+    def __init__(self):
+        self.manager = JsonManager()
+        self.current_user = None
 
-def login(username, password):
-    global current_user
-    user = load_user(username)
-    if user and user.password == password:
-        current_user = user
-        return True
-    return False
+    def load_user(self, username):
+        return self.manager.load_user(username)
 
-def get_current_user():
-    return current_user
+    def login(self, username, password):
+        username = username.lower()
+        user = self.load_user(username)
+        if user and user.password == password:
+            self.current_user = user
+            Session.set_current_user(username)
+            return True
+        return False
+
+    def get_current_user(self):
+        return self.current_user
+
+    def logout(self):
+        self.current_user = None

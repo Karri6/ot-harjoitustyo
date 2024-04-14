@@ -17,3 +17,6 @@ def coverage_report(c):
     c.run("coverage run -m pytest")
     c.run("coverage html")
     
+@task
+def lint(c):
+    c.run("poetry run pylint src")

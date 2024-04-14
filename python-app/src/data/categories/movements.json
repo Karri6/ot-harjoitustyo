@@ -1,0 +1,60 @@
+{
+  "instructions": "Select a category from the dropdown menu",
+
+    "upper_body_movements": [
+      "Bench Press",
+      "Push-Ups",
+      "Pull-Ups",
+      "Shoulder Press",
+      "Barbell Rows",
+      "Bicep Curls",
+      "Tricep Extensions",
+      "Lateral Raises",
+      "Chest Flys",
+      "Arnold Press",
+      "Dips"
+    ],
+    "lower_body_movements": [
+      "Squats",
+      "Deadlifts",
+      "Lunges",
+      "Leg Press",
+      "Romanian Deadlifts",
+      "Calf Raises",
+      "Step-Ups",
+      "Leg Extensions",
+      "Leg Curls",
+      "Bulgarian Split Squats"
+    ],
+    "cardio_options": [
+      "Running",
+      "Jogging",
+      "Hill Sprints",
+      "Cycling",
+      "Rowing",
+      "Jump Rope",
+      "Stair Climbing",
+      "Elliptical Machine",
+      "HIIT",
+      "Boxing",
+      "Swimming",
+      "Plyometrics"
+    ],
+    "accessory_exercises": [
+      "Core/Abs",
+      "Stretching",
+      "Mobility training",  
+      "Resistance Band Exercises"
+    ],
+    "other_workout_options": [
+      "Swimming",
+      "Pilates",
+      "Yoga",
+      "Ball Sports",
+      "Martial Arts",
+      "Dancing",
+      "Bouldering",
+      "Hiking",
+      "Group Fitness Class"
+    ]
+  }
