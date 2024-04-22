@@ -11,7 +11,8 @@
 - Käyttäjä voi tallentaa luodun harjoituksen
 
 ### Kurssin viikko 5
-> suunnitelma testien laajentaminen, päänäkymän aikaisempien kirjaustenhistorian näkymän lopullinen toteutus
+- käyttäjä voi katsella harjoitushistoriaa ja tarkastella aikaisempien harjoitusten sisältöä
+- UI:lle annettu hieman persoonallisuutta.
 
 ### Kurssin viikko 6
 > suunnitelma graafinen seuranta näkymä, koodin kommentointi ja siistiminen
