@@ -4,7 +4,6 @@ from gui.signup_view import SignupView
 from gui.main_view import MainView
 from gui.workout_view import WorkoutView
 
-
 class MainApp:
     """
     Class runs/manages the interface of the app by updating the new view
@@ -15,6 +14,7 @@ class MainApp:
         self.root = root
         self.current_view = None
         self.root.geometry("680x620")
+        self.root.title("Workout Diary")
         self.show_login_view()
 
     def show_login_view(self):

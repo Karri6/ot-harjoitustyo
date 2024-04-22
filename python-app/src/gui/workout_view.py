@@ -25,6 +25,11 @@ class WorkoutView(ttk.Frame):
         self.username = Session.get_current_user()
         self.user = self.json_manager.load_user(self.username)
 
+        style = ttk.Style()
+        style.configure('TLabelframe', font=('Roboto', 12, 'bold'), bg='#b9dba0')
+        style.configure('TLabelframe.Label', font=('Roboto', 12, 'bold'),
+                         bg='#b9dba0', fg='black')
+        
         self.load_movements()
         self.setup_ui()
 
@@ -39,20 +44,26 @@ class WorkoutView(ttk.Frame):
                                 self.update_movements_list)
 
         self.current_workout_frame = ttk.LabelFrame(
-            self, text="Current Workout")
+            self, text="Current Workout", style='TLabelframe')
         self.current_workout_frame.pack(
             side=tk.LEFT, fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-        self.current_workout_list = tk.Listbox(self.current_workout_frame)
+        self.current_workout_list = tk.Listbox(self.current_workout_frame,  font=('Roboto', 12),
+                                               bg='#b9dba0', fg='black',
+                                               selectbackground='#36312c', selectforeground='white',
+                                               borderwidth=0, highlightthickness=0, relief='flat')
         self.current_workout_list.pack(fill=tk.BOTH, expand=True)
 
         self.available_movements_frame = ttk.LabelFrame(
-            self, text="Available Movements")
+            self, text="Available Movements", style='TLabelframe')
         self.available_movements_frame.pack(
             side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=10, pady=10)
 
         self.available_movements_list = tk.Listbox(
-            self.available_movements_frame)
+            self.available_movements_frame, font=('Roboto', 12),
+            bg='#b9dba0', fg='black',
+            selectbackground='#36312c', selectforeground='white',
+            borderwidth=0, highlightthickness=0, relief='flat')
         self.available_movements_list.pack(fill=tk.BOTH, expand=True)
 
         self.available_movements_list.insert(tk.END, self.instructions)

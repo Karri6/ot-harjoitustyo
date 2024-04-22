@@ -6,7 +6,6 @@ the user interface.
 import tkinter as tk
 from app import MainApp
 
-
 def main():
     root = tk.Tk()
     app = MainApp(root)

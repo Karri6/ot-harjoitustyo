@@ -26,17 +26,22 @@ class MainView(ttk.Frame):
         self.setup_ui()
 
     def setup_ui(self):
+        style = ttk.Style()
+        style.configure('Info.TLabel', font=('Segoe UI', 12, 'bold'),
+                        foreground='black', background='#f7efd7',
+                        padding=(10, 10), relief='raised')
+
         # user info
         user_info_label = ttk.Label(self, text=(
-            f"Name: {self.user.name}\n"
-            f"Age: {self.user.age}\n"
-            f"Workouts logged: {len(self.user.workouts)}"))
+            f"Name:  {self.user.name}\n"
+            f"Age:  {self.user.age}\n"
+            f"Workouts logged:  {len(self.user.workouts)}"), style='Info.TLabel')
 
-        user_info_label.place(x=20, y=20, width=200, height=100)
-
+        user_info_label.place(x=20, y=20, width=250, height=100)
+        
         # scrollable list
         scroll_frame = ttk.Frame(self)
-        scroll_frame.place(x=20, y=140, width=200, height=400)
+        scroll_frame.place(x=20, y=140, width=300, height=400)
 
         canvas = tk.Canvas(scroll_frame)
         scrollbar = ttk.Scrollbar(
@@ -62,7 +67,7 @@ class MainView(ttk.Frame):
         # graph placeholder
         graph_placeholder = ttk.Label(
             self, text="Graph placeholder", background="lightgray")
-        graph_placeholder.place(x=240, y=20, width=400, height=300)
+        graph_placeholder.place(x=320, y=20, width=400, height=300)
 
         new_workout_button = ttk.Button(
             self, text="Add a Workout", command=self.show_workout_view)
@@ -72,3 +77,4 @@ class MainView(ttk.Frame):
         self.workout_data = []
         self.workout_data = self.json_manager.load_workouts(
             Session.get_current_user())
+        
