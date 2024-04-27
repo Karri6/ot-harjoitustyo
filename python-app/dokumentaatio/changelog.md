@@ -15,7 +15,9 @@
 - UI:lle annettu hieman persoonallisuutta.
 
 ### Kurssin viikko 6
-> suunnitelma graafinen seuranta näkymä, koodin kommentointi ja siistiminen
+- Käyttäjä voi avata koko historian erilliseen näkymään
+todo:
+- Graafinen historian esitys palkkeina
 
 ### Kurssin viikko 7
 > suunnitelma valmis työ
