@@ -9,10 +9,15 @@ Projekti toteutetaan Python kielellä hyödyntäen yksinkertaista tkinter käytt
 
 ## Sovelluksen ajaminen
 
+Kloonaa tämä repositorio tai lataa python app kansio kokonaisuudessaan.
+> Oletuksena on, että käyttäjällä on valmiudet suorittaa poetry komentoja.
+
 ### Ajaa ohjelman
 ```
 poetry run invoke start 
 ```
+Voit nyt luoda uuden käyttäjän, tai vaihtoehtoisesti kirjautua valmiiksi luodulla testikäyttäjällä, jolle on luotu päiväkirjaan merkintöjä tarkasteltavaksi.
+
 ### Ajaa testit
 ```
 poetry run invoke test 
