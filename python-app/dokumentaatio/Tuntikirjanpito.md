@@ -13,5 +13,6 @@
 | 14.4  | 4   | refaktorointia ja päänäkymän historia-listan toteutus |
 | 14.4   | 2   | pylint, siistiminen ja arkkitehtuuri.md |
 | 23.4   | 5   | Virheiden korjausta ja UI:n ulkoasun värittämistä  |
-| YHT  | 34   | tuntia |
+| 28.4   | 3  | Uusi näkymä käytettävyyden parantamiseksi |
+| YHT  | 37   | tuntia |
 
