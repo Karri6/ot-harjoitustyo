@@ -17,14 +17,14 @@ Sovellus on tarkoitettu henkilökohtaiseen kirjanpitoon, eikä todennäköisesti
 _**Vanha**-käyttäjä_ voi kirjautua olemassa olevalla tunnuksella ja salasanallaan sisään.
 > huom. projektissa ei tarvitse huolehtia tietoturvasta, täten salasanoja ei sekoiteta hash funtkiolla ja ne tallennetaan suoraan ~tietokantaan~ json-tiedostoon sellaisenaan.
 
-### Päänäkymä
+### Päänäkymä (tehty)
 Käyttäjä voi tarkastella menneitä tietojaan kahdessa muodossa. 
 - Graafinen näkymä esittää käyttäjän aikaisempien kuukausien aktiivisuuden.
 - Tekstinäkymässä käyttäjä voi selata aikaisempien aktiviteettien sisältöä tarkemmin.
 
 Käyttäjä voi kirjata uuden aktiviteetin avaamalla kirjausnäkymän.
 
-### Kirjausnäkymä
+### Kirjausnäkymä (tehty)
 Käyttäjä voi valita käyttöliittymän elementeillä uuden aktiviteetin sisällön ja keston.  
 > ~ei vielä päätetty/suunniteltu loppuun mikä tämä elementti on ja mikä sen varsianinen toiminta on~ TKinter ei omaa helppoa tapaa (jos ollenkaan) tehdä drag and drop elementtejä, joten käytössä simppeli klikkaa ja vahvista napin painalluksella toimiva harjoituslistan päivittäminen
 
