@@ -36,7 +36,7 @@ Sovelluksen pitäisi nyt toimia ja voit kirjautua sisään valmiiksi luodulla **
 - Ja salasanana toimii: '1234'
 - Testikäyttäjälle on sovellusta käyttäen luotu joitain päiväkirjamerkintöjä huhtikuulle ja sarakekaavion havainnollistamisen vuoksi litannia tyhjiä tiedostoja maalis- sekä helmikuulle.
 - HUOM! Mikäli sovellusta käyttää testikäyttäjällä toukokuussa, näyttää sarakekaavio vain edellisen kahden kuukauden merkintöjä. Toukokuulle on siis itselisättävä uusia merkintöjä. 
-  > huomaa myös: Tiedostojen nimet eivät vastaa sovelluksen generoimia tiedostonimiä aivan 1:1 suhteen niiden manuaalisen muokkailutavan takia.
+  > huomaa myös: Tiedostojen nimet eivät vastaa sovelluksen generoimia tiedostonimiä aivan 1:1 suhteen niiden manuaalisen muokkaamisen takia.
 
 
 ## Sovelluksen toiminta
