@@ -8,9 +8,16 @@ class MainApp:
     """
     Class runs/manages the interface of the app by updating the new view
     to the same window.
+
+    Attributes:
+        root: root widget for displaying views in
+        current_view: the view that is loaded onto the widget
     """
 
     def __init__(self, root):
+        """
+        Constructs the class, and the entire app's root
+        """
         self.root = root
         self.current_view = None
         self.root.geometry("680x620")
@@ -18,18 +25,33 @@ class MainApp:
         self.show_login_view()
 
     def show_login_view(self):
+        """
+        Changes view to login view
+        """
         self.change_view(LoginView, self.show_signup_view, self.show_main_view)
 
     def show_signup_view(self):
+        """
+        Changes view to signup view
+        """
         self.change_view(SignupView, self.show_main_view, self.show_login_view)
 
     def show_main_view(self):
+        """
+        Changes view to main view
+        """
         self.change_view(MainView)
 
     def show_workout_view(self):
+        """
+        Changes view to workout view, where user can add new entries
+        """
         self.change_view(WorkoutView, self.show_main_view)
 
     def change_view(self, view_class, *args):
+        """
+        Handles the changing view event
+        """
         if self.current_view is not None:
             self.current_view.destroy()
         if view_class == MainView:

@@ -8,10 +8,17 @@ from objects import workout
 
 class WorkoutView(ttk.Frame):
     """
-    implements the workout pick, choose and edit view for the user
+    Implements the workout pick, choose and edit view for the user
     """
 
     def __init__(self, parent, show_main_view):
+        """
+        Constructor for the view
+
+        Args:
+            parent:
+            show_main_view:
+        """
         super().__init__(parent)
         self.parent = parent
         self.show_main_view = show_main_view
@@ -29,16 +36,20 @@ class WorkoutView(ttk.Frame):
         style.configure('TLabelframe', font=('Roboto', 12, 'bold'), bg='#b9dba0')
         style.configure('TLabelframe.Label', font=('Roboto', 12, 'bold'),
                          bg='#b9dba0', fg='black')
-        
+
         self.load_movements()
         self.setup_ui()
 
     def setup_ui(self):
+        """
+        Sets up the view by adding the menu, buttons and list views.
+        """
         self.category_menu = ttk.Combobox(
             self, textvariable=self.current_category,
             values=["Select Category", "Upper Body",
                     "Lower Body", "Cardio", "Accessories", "Other"],
             state="readonly")
+        
         self.category_menu.pack(pady=10)
         self.category_menu.bind("<<ComboboxSelected>>",
                                 self.update_movements_list)
@@ -91,6 +102,10 @@ class WorkoutView(ttk.Frame):
     def update_movements_list(self, event):
         """
         Updates the movements list based on the selected category
+
+        Args:
+            event: when the dropdown menu is used updates the list view 
+                (shows up in IDE as unused, but does not work without this)
         """
         selected_category = self.current_category.get()
         if selected_category == "Select Category":
@@ -139,6 +154,9 @@ class WorkoutView(ttk.Frame):
         return False
 
     def save_button_pressed(self):
+        """
+        Handles save button event
+        """
         if not self.save_workout():
             self.show_message("Failed to save",
                               "Add exercises to the workout before saving")
@@ -146,4 +164,7 @@ class WorkoutView(ttk.Frame):
             self.show_message("Success", "Workout saved successfully!")
 
     def show_message(self, title, message):
+        """
+        Displays message to user
+        """
         tk.messagebox.showwarning(title, message)

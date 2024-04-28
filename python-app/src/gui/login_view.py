@@ -1,4 +1,3 @@
-import tkinter as tk
 from tkinter import ttk, messagebox
 from event_handlers.login_handler import LoginManager
 
@@ -8,6 +7,15 @@ class LoginView(ttk.Frame):
     """
 
     def __init__(self, parent, show_signup, show_main):
+        """
+        Constructor for the Login view
+
+        Args:
+            parent: 
+            show_signup:
+            show_main:
+       
+        """
         super().__init__(parent)
         self.login_manager = LoginManager()
         self.show_signup = show_signup
@@ -28,10 +36,14 @@ class LoginView(ttk.Frame):
 
         self.signup_button = ttk.Button(
             self, text="Sign Up", command=self.show_signup)
-        
+
         self.signup_button.place(x=300, y=320, width=120, height=40)
 
     def login(self):
+        """
+        Handles the login action by using the login manager class.
+        Displays message if user gives incorrect credentials 
+        """
         if self.login_manager.login(self.username_entry.get(), self.password_entry.get()):
             self.show_main()
         else:

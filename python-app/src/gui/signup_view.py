@@ -10,6 +10,14 @@ class SignupView(ttk.Frame):
     """
 
     def __init__(self, parent, show_login, show_main):
+        """
+        Constructor for the signup view
+
+        Args:
+            parent: 
+            show_login:
+            show_main:
+        """
         super().__init__(parent)
         self.json_manager = JsonManager()
 
@@ -53,6 +61,10 @@ class SignupView(ttk.Frame):
         self.back_button.place(x=300, y=450, width=120, height=40)
 
     def signup(self):
+        """
+        Handles the signing up event using the json manager class
+        Displays information according to the result of the sign up action
+        """
         name = self.fullname_entry.get()
         age = self.age_entry.get()
         username = self.username_entry.get()
