@@ -16,8 +16,7 @@
 
 ### Kurssin viikko 6
 - Käyttäjä voi avata koko historian erilliseen näkymään
-- todo:
-  - Graafinen historian esitys palkkeina
+- Graafinen historian esitys sarakekaaviona
 
 ### Kurssin viikko 7
-> suunnitelma valmis työ
+> suunnitelma: valmis työ
