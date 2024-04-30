@@ -134,8 +134,7 @@ class WorkoutView(ttk.Frame):
         selection = self.available_movements_list.curselection()
         if selection:
             selected_movement = self.available_movements_list.get(selection[0])
-            details = simpledialog.askstring("Input", f"Enter details for {
-                                             selected_movement} (e.g., duration, sets/reps):")
+            details = simpledialog.askstring("Input", f"Enter details for {selected_movement} (e.g., duration, sets/reps):")
             if details:
                 self.current_workout_list.insert(
                     tk.END, f"{selected_movement}: {details}")
