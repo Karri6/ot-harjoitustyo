@@ -30,12 +30,13 @@ Tämän voi korjata vaihtamalla tasks.py tiedoston start funktioon oikean python
 def start(c):
     c.run("python src/main.py") 
 ```
-
+### Kirjautuminen
 Sovelluksen pitäisi nyt toimia ja voit kirjautua sisään valmiiksi luodulla **testikäyttäjällä**. Testikäyttäjälle on luotu päiväkirjaan merkintöjä ja tiedostoja tarkasteltavaksi, joka havainnollistaa koko sovelluksen toiminnallisuutta. Vaihtoehtoisesti voit luoda oman **uuden käyttäjän** ja aloittaa tyhjältä alustalta.
+
 - Testikäyttäjän käyttäjänimi on: 'esimerkki'
 - Ja salasanana toimii: '1234'
 - Testikäyttäjälle on sovellusta käyttäen luotu joitain päiväkirjamerkintöjä huhtikuulle ja sarakekaavion havainnollistamisen vuoksi litannia tyhjiä tiedostoja maalis- sekä helmikuulle.
-- HUOM! Mikäli sovellusta käyttää testikäyttäjällä toukokuussa, näyttää sarakekaavio vain edellisen kahden kuukauden merkintöjä. Toukokuulle on siis itselisättävä uusia merkintöjä. 
+- HUOM! Mikäli sovellusta käyttää testikäyttäjällä toukokuussa, näyttää sarakekaavio vain edellisen kahden kuukauden merkintöjä. Toukokuulle on siis itse lisättävä uusia merkintöjä. 
   > huomaa myös: Tiedostojen nimet eivät vastaa sovelluksen generoimia tiedostonimiä aivan 1:1 suhteen niiden manuaalisen muokkaamisen takia.
 
 
@@ -69,7 +70,7 @@ poetry run invoke lint
 ### Linkki harjoitustyön tuntikirjanpitoon
 [tuntikirjanpito](python-app/dokumentaatio/Tuntikirjanpito.md)
 
-### Changelog linkki
+### Changelog
 [changelog](python-app/dokumentaatio/changelog.md)
 
 ### Sovelluksen arkkitehtuuri
