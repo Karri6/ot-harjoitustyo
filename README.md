@@ -9,15 +9,15 @@ Projekti toteutetaan Python kielellä hyödyntäen yksinkertaista tkinter käytt
 
 ## Sovelluksen käynnistys ja käyttö
 
-Kloonaa tämä repositorio tai lataa python app kansio kokonaisuudessaan.
+Kloonaa tämä repositorio tai lataa [python-app](python-app) kansio kokonaisuudessaan.
 > Oletuksena on, että käyttäjällä on valmiudet suorittaa poetry komentoja.
 
-Lataa ja asenna riippuvuudet komennolla 
+### Lataa ja asenna riippuvuudet komennolla 
 ```
 poetry install
 ```
 
-###  Ohjelman käynnistys
+### Ohjelman käynnistys
 Seuraava komento käynnistää ohjelman
 ```
 poetry run invoke start 
@@ -36,7 +36,7 @@ def start(c):
     c.run("python src/main.py") 
 ```
 
-Sovelluksen pitäisi olla nyt testattavissa. Seuraa [käyttöohjeet](python-app/dokumentaatio/käyttöohje.md) sivun ohjeita sovelluksen navigoimiseksi.
+Sovelluksen pitäisi olla nyt käytettävissä. Seuraa [käyttöohjeita](python-app/dokumentaatio/käyttöohje.md) sovelluksen navigoimiseksi.
 
 ## Muut komennot
 ### Testit
@@ -53,11 +53,16 @@ poetry run invoke lint
 ```
 ---
 ## Linkit
+
+### Käyttöohje
+- [Käyttöohje](python-app/dokumentaatio/käyttöohje.md) 
+
 ### Linkki harjoitustyön tuntikirjanpitoon
-[tuntikirjanpito](python-app/dokumentaatio/Tuntikirjanpito.md)
+- [Tuntikirjanpito](python-app/dokumentaatio/Tuntikirjanpito.md)
 
 ### Changelog
-[changelog](python-app/dokumentaatio/changelog.md)
+- [Changelog](python-app/dokumentaatio/changelog.md)
 
 ### Sovelluksen arkkitehtuuri
-[Arkkitehtuuri.md](python-app/dokumentaatio/arkkitehtuuri.md)
+- [Arkkitehtuuri.md](python-app/dokumentaatio/arkkitehtuuri.md)
+
