@@ -3,7 +3,7 @@
 ### Käyttöliittymä
 Sovelluksella on neljä päänäkymää sekä kaksi sivunäkymää lisätietoja varten.\
 Päänäkymät ovat toteutettu omina luokkinaan ja sivunäkymät luodaan niistä käsin.\
-Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](../app.py)
+Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](../src/app.py)
 
 #### Päänäkymät:
 
