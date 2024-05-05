@@ -25,8 +25,8 @@ Käyttäjä voi tarkastella menneitä tietojaan kahdessa muodossa.
 Käyttäjä voi kirjata uuden aktiviteetin avaamalla kirjausnäkymän.
 
 ### Kirjausnäkymä (tehty)
-Käyttäjä voi valita käyttöliittymän elementeillä uuden aktiviteetin sisällön ja keston.  
-> ~ei vielä päätetty/suunniteltu loppuun mikä tämä elementti on ja mikä sen varsianinen toiminta on~ TKinter ei omaa helppoa tapaa (jos ollenkaan) tehdä drag and drop elementtejä, joten käytössä simppeli klikkaa ja vahvista napin painalluksella toimiva harjoituslistan päivittäminen
+Käyttäjä voi valita käyttöliittymän elementeillä uuden aktiviteetin ja kirjata tapahtumalle lisätietoja esimerkiksi harjoituksen pituuden.
+> TKinter ei omaa helppoa tapaa (jos ollenkaan) tehdä drag and drop elementtejä, joten käytössä simppeli klikkaa ja vahvista napin painalluksella toimiva harjoituslistan päivittäminen
 
 
 ## Käyttöliittymäluonnos
