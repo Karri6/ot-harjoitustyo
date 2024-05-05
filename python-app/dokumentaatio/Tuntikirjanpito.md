@@ -15,6 +15,6 @@
 | 23.4   | 5   | Virheiden korjausta ja UI:n ulkoasun värittämistä  |
 | 27.4   | 3  | Lisä näkymä käytettävyyden parantamiseksi |
 | 28.4   | 2  | Docstring kommentointia ja koodin refaktorointia/siistimistä |
-| 28.4   | 4  | Sarakekaavion toteutus, esimerkki-datan tekeminen |
+| 28.4   | 4  | Sarakekaavio esityksen toteutus, esimerkki-datan tekeminen |
 | YHT  | 43   | tuntia |
 
