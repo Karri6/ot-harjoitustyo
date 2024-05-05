@@ -33,5 +33,12 @@ Käyttäjä voi valita käyttöliittymän elementeillä uuden aktiviteetin ja ki
 Luonnoksessa on neljä näkymää, kirjautuminen, uusi käyttäjä, päänäkymä ja kirjausnäkymä. Sovelluksen flow alkaa luonnollisesi kirjautumisnäkymästä, edeten siitä käyttäjän toimintojen mukaisesti joko päänäkymään tai uuden käyttäjän luomiseen. Päänäkymän ja kirjausnäkymän välillä on mahdollista liikkua edestakaisin rajattomasti.
 [Luonnoksen kuva](käyttöliittymäluonnos.png)
 
+## Jatkokehitysideoita
+Sovellusta voisi laajentaa lisäämällä siihen esimerkiksi:
+- Mahdollisuuden tulostaa harjoituksen
+- Mahdollisuuden kirjata päivän kehonpainoa ja seurata sen kehitystä
+- Laskurin päivittäiselle ravinnon tarpeelle, riippuen liikunnan määrästä.
+
+
 ## Muita huomioita
 - Tietokannan sijaan tiedon talletus toteutettu json tiedostoilla. 
