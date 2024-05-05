@@ -40,12 +40,14 @@ Hyväksytyn kirjautumisen yhtyedessä ohjelma siirtyy kotisivulle ja hakee json 
 
 ### Uusi käyttäjä
 - Mikäli käyttäjä luo uuden tunnuksen sovellukseen, tarkistaa sovellus, ettei kyseisellä tunnuksella ole jo käyttäjää ja tämän jälkeen toiminta etenee seuraavasti:
+  
 <img width="588" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/aca57e7a-00ea-4dec-9dbc-486185bf0326">
 
 Uuden käyttäjän luominen toimii loogisesti samoin kuin kirjautminen, käyttäjä kirjaa tiedot ja JsonManager luokan check_user() metodi joko hyväksyy tai ei hyväksy käyttäjänimeä, riippuen siitä onko sellainen jo olemassa.\ Kirjautumisen onnistuessa käyttäjä siirtyy kotisivulle ja voi toimia normaalisti sovelluksessa.
 
 ### Uusi merkintä
 - Käyttäjän luodessa uuden merkinnän päiväkirjaan tapahtumaketju etenee seuraavanlailla:
+  
 <img width="548" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/60b31d97-95d7-4820-88e9-ddc7efc2ed02">
 
 
@@ -54,11 +56,24 @@ Näistä käyttäjä voi luoda omia merkintöja ja kirjata lisätietoja kunkin m
 
 ## Rakenne ja sovelluslogiikka
 
-###  Luokkakaavio
+Sovelluksen päätoiminnan pohjana on objects pakkauksen alaisuudessa olevat User ja Workout luokat, jotka itsessään ovat hyvin yksikertaisia, mutta sisältävät kaiken konkreettisen informaation muiden toimintojen rakentamiseen. Näiden luokkien tallennuksesta ja niiden välisistä suhteista pitää huolen luokka JsonManager, joka hallinnoi tietojen talletusta ja lataamista.\
+
 <img width="152" alt="wod_relation" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/cbeaae83-9b11-4ba6-b179-02976a033b9e">
+
+### Talletus
+Sovellus tallentaa käyttäjän ja käyttäjän tekemät erillisille json tiedostoille. User luokasta tehtävään json tiedostoon tallennetaan jokaiseen käyttäjän harjoitukseen viite json osoitteena, jonka avulla harjoitus voidaan ladata uudelleen näkyviin seuraavalla käyttökerralla. 
+
 
 ### Pakkauskaavio
 <img width="507" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/b7b8d63e-f68f-4075-9c9a-dd3a8227386b">
 
+Yksinkertaisesti havainnollistettuna ohjelman pakkaukset. 
+- GUI: kaikki käyttöliittymän luokat ja komponentit
 
+- Event handlers: Looginen osuus, esim JsonManager joka huolehtii tietojen talletuksesta.
+- Data: Kaikki tallennetut tiedostot
+- Objects: User ja Workout luokat joista tallennetaan dataa
+
+---
+Tarkemmin luokkien suhteita havainnollistava kaavio:
 <img width="607" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/43298ba3-f3dd-463f-9011-6441d1df6654">
