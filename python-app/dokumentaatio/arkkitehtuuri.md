@@ -75,5 +75,5 @@ Yksinkertaisesti havainnollistettuna ohjelman pakkaukset.
 - Objects: User ja Workout luokat joista tallennetaan dataa
 
 ---
-Tarkemmin luokkien suhteita havainnollistava kaavio:
+Tarkemmin luokkien suhteita havainnollistava kaavio:\
 <img width="607" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/43298ba3-f3dd-463f-9011-6441d1df6654">
