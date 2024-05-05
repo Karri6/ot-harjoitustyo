@@ -47,6 +47,10 @@ class PillarChart(tk.Canvas):
         if not self.data:
             return
         max_data = max(self.data)
+
+        if max_data == 0:
+            max_data = 20
+
         scale_factor = self.max_chart_height / max_data
         for i, month in enumerate(self.months):
             x0 = i * (self.bar_width + self.bar_spacing) + 50

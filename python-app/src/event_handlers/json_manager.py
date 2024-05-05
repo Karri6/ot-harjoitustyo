@@ -15,7 +15,7 @@ class JsonManager():
 
     def __init__(self):
         """
-        Constructor
+        Constructor for the class
         """
         self.all_users = []
         self.load_users()
@@ -31,6 +31,7 @@ class JsonManager():
 
             self.all_users.append(users_data['username'])
 
+
     def save_user(self, user):
         """
         Saves a user to a json file
@@ -42,6 +43,7 @@ class JsonManager():
         user_file = os.path.join(USERS_DIR, f"{user.username}.json")
         with open(user_file, 'w') as f:
             json.dump(user.to_json(), f, indent=4)
+
 
     def load_user(self, username):
         """

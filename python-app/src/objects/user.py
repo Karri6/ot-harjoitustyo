@@ -24,6 +24,9 @@ class User:
     def to_json(self):
         """
         Handles the formatting for dumping the user to a json file
+
+        Returns:
+            dict,  to format json dump
         """
         return {
             'name': self.name,
@@ -37,6 +40,9 @@ class User:
     def from_json(data):
         """
         Handles creating a user from a json file
+
+        Returns
+            User: an instance of the user 
         """
         return User(data['name'], data['age'], data['username'],
                      data['password'], data.get('workouts', []))

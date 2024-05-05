@@ -62,7 +62,7 @@ class SignupView(ttk.Frame):
 
     def signup(self):
         """
-        Handles the signing up event using the json manager class
+        Uses the json_manager class to handle the signing up event
         Displays information according to the result of the sign up action
         """
         name = self.fullname_entry.get()
@@ -72,6 +72,7 @@ class SignupView(ttk.Frame):
 
         if username and password and name and age:
             username = username.lower()
+            
             if not self.json_manager.check_user(username):
                 new_user = User(name, age, username, password)
                 self.json_manager.save_user(new_user)
