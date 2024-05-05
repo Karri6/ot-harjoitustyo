@@ -11,10 +11,9 @@ class LoginView(ttk.Frame):
         Constructor for the Login view
 
         Args:
-            parent: 
-            show_signup:
-            show_main:
-       
+            parent: tkinter widget where view is displayed 
+            show_signup: method to switch the view
+            show_main: method to switch the view
         """
         super().__init__(parent)
         self.login_manager = LoginManager()

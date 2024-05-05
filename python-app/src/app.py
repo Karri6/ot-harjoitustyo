@@ -51,6 +51,10 @@ class MainApp:
     def change_view(self, view_class, *args):
         """
         Handles the changing view event
+
+        Args:
+        view_class: the class changed into
+        *args non keyworder arguments (that this does not work without)
         """
         if self.current_view is not None:
             self.current_view.destroy()

@@ -14,9 +14,9 @@ class SignupView(ttk.Frame):
         Constructor for the signup view
 
         Args:
-            parent: 
-            show_login:
-            show_main:
+            parent: tkinter widget where view is displayed 
+            show_login: method to switch the view
+            show_main: method to switch the view
         """
         super().__init__(parent)
         self.json_manager = JsonManager()
@@ -72,7 +72,7 @@ class SignupView(ttk.Frame):
 
         if username and password and name and age:
             username = username.lower()
-            
+
             if not self.json_manager.check_user(username):
                 new_user = User(name, age, username, password)
                 self.json_manager.save_user(new_user)

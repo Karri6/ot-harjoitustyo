@@ -16,8 +16,8 @@ class WorkoutView(ttk.Frame):
         Constructor for the view
 
         Args:
-            parent:
-            show_main_view:
+            parent: tkinter widget where view is displayed 
+            show_main_view: method to switch the view
         """
         super().__init__(parent)
         self.parent = parent
@@ -49,7 +49,7 @@ class WorkoutView(ttk.Frame):
             values=["Select Category", "Upper Body",
                     "Lower Body", "Cardio", "Accessories", "Other"],
             state="readonly")
-        
+
         self.category_menu.pack(pady=10)
         self.category_menu.bind("<<ComboboxSelected>>",
                                 self.update_movements_list)
@@ -136,7 +136,7 @@ class WorkoutView(ttk.Frame):
             selected_movement = self.available_movements_list.get(selection[0])
             details = simpledialog.askstring(
                 "Input", f"Enter details for {selected_movement} (e.g., duration, sets/reps):")
-            
+
             if details:
                 self.current_workout_list.insert(
                     tk.END, f"{selected_movement}: {details}")
@@ -144,6 +144,9 @@ class WorkoutView(ttk.Frame):
     def save_workout(self):
         """
         Saves the generated workout to a json
+
+        Returns:
+            bool: Was there something to save
         """
         content = [self.current_workout_list.get(
             idx) for idx in range(self.current_workout_list.size())]

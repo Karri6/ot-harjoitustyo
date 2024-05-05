@@ -62,7 +62,6 @@ class JsonManager():
             return User.from_json(user_data)
         return None
 
-    
 
     def save_workout_json(self, workout):
         """
@@ -102,15 +101,15 @@ class JsonManager():
             return []
 
         workouts = []
-        for workout_filename in user.workouts:            
+        for workout_filename in user.workouts:
             workout_file = os.path.join(WORKOUTS_DIR, workout_filename)
             if os.path.exists(workout_file):
                 with open(workout_file, 'r') as f:
                     workouts.append(Workout.from_json(json.load(f)))
 
         return workouts
-    
-    
+
+
     def check_user(self, username):
         """
         Checks if a username exists
@@ -119,7 +118,7 @@ class JsonManager():
             bool, if username exist or not
         """
         return username in self.all_users
-    
+
 
     def load_categories(self):
         """

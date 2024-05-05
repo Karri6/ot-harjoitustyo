@@ -28,10 +28,10 @@ class MainView(ttk.Frame):
 
         self.login_handler = LoginManager()
         self.json_manager = JsonManager()
-        
+
         self.username = Session.get_current_user()
         self.user = self.json_manager.load_user(self.username)
-        
+
         self.load_user_data()
         self.setup_ui()
 
@@ -83,10 +83,10 @@ class MainView(ttk.Frame):
 
         canvas = tk.Canvas(frame)
         canvas.pack(side="left", fill="both", expand=True)
-        
+
         list_view = ttk.Frame(canvas)
         canvas.create_window((0, 0), window=list_view, anchor="nw")
-        
+
         self.populate_list_view(list_view)
 
 
@@ -150,8 +150,7 @@ class MainView(ttk.Frame):
 
         frame.bind("<Configure>", lambda event,
                     canvas=canvas: canvas.configure(scrollregion=canvas.bbox("all")))
-        
-        
+
     def count_recent_workouts(self):
         """
         Counts the workout frequency from past months
@@ -160,25 +159,24 @@ class MainView(ttk.Frame):
             The count for each of three past months
         """
         now = datetime.datetime.now()
-        
+
         this_month = 0
         last_month = 0
         two_months_ago = 0
 
         for workout in reversed(self.workout_data):
             workout_date = workout.date
-            
+
             if now.year == workout_date.year and now.month == workout_date.month:
                 this_month += 1
 
             elif now.year == workout_date.year and now.month - 1 == workout_date.month:
                 last_month += 1
-                
+
             elif now.year == workout_date.year and now.month - 2 == workout_date.month:
                 two_months_ago += 1
 
             elif workout_date.month - now.month <= -4:
                 break
-        
+
         return [two_months_ago, last_month, this_month]
-    
