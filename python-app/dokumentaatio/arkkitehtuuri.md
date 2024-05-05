@@ -1,5 +1,29 @@
 # Sovelluksen arkkitehtuuri
 
+### Käyttöliittymä
+Sovelluksella on neljä päänäkymää sekä kaksi sivunäkymää lisätietoja varten.\
+Päänäkymät ovat toteutettu omina luokkinaan ja sivunäkymät luodaan niistä käsin.\
+Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](python-app/src/app.py)
+
+#### Päänäkymät:
+
+- Kirjautuminen
+  
+- Uuden käyttäjän luominen
+- Kotisivu
+- Uuden merkinnän/harjoituksen kirjaus
+
+#### Sivunäkymät:
+- Koko harjoitushistorian katselu
+  
+- Merkinnän lisätietojen lisääminen
+
+Käyttöliittymä hakemisto sisältää näkymien lisäksi kaksi luokkaa jotka toteuttavat kotisivun graafisia elmenttejä.\
+Luokka [workout_element.py](python-app/src/gui/workout_element.py) toteuttaa laajennettavan elementin, johon talletetaan harjoituspäiväkirjan merkintäpäivä ja sisältö graafista esitystä varten.\
+Luokka [pillar_chart.py](python-app/src/gui/pillar_chart.py) toteuttaa sarakekaavion, joka laskee ja kuvaa käyttäjän harjoitukset edellisiltä kuukausilta. 
+
+---
+
 ###  Luokkakaavio
 <img width="152" alt="wod_relation" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/cbeaae83-9b11-4ba6-b179-02976a033b9e">
 
