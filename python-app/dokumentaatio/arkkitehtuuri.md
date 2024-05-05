@@ -12,7 +12,7 @@
 > kuvassa pieni erhe, oikean alakulman history ja workout repository laatikot ovat väärinpäin, tulisi olla kuten alla olevassa kuvassa
 
 ### Sekvenssikaavio uusi käyttäjä
-
+<img width="686" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/e2390287-2fab-406f-9b44-e09b7452452c">
 
 ### Sekvenssikaavio uusi merkintä
 <img width="574" alt="image" src="https://github.com/Karri6/ot-harjoitustyo/assets/126342259/fea666a7-2a2f-4b47-86b1-09ad4e861205">
