@@ -16,5 +16,7 @@
 | 27.4   | 3  | Lisä näkymä käytettävyyden parantamiseksi |
 | 28.4   | 2  | Docstring kommentointia ja koodin refaktorointia/siistimistä |
 | 28.4   | 4  | Sarakekaavio esityksen toteutus, esimerkki-datan tekeminen |
-| YHT  | 43   | tuntia |
+| 5.5   | 3  | Viimeistely: Arkkitehtuuri, käyttöohje, testaus ja muut dokumentit. |
+| 5.5   | 1  | Docstring viimeistely ja etätyöpöytä testaus |
+| YHT  | 47   | tuntia |
 
