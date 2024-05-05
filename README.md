@@ -40,14 +40,17 @@ Sovelluksen pitäisi olla nyt käytettävissä. Seuraa [käyttöohjeita](python-
 
 ## Muut komennot
 ### Testit
+Ajaa pytest testit
 ```
 poetry run invoke test 
 ```
 ### Testikattavuuden raportti
+Ajaa coverage_report komennon ja tulostaa tulokset index.html tiedostoon
 ```
 poetry run invoke coverage-report
 ```
 ### Pylint raportti
+Luo analyysin koodin laadusta
 ```
 poetry run invoke lint
 ```
