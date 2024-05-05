@@ -3,7 +3,7 @@
 ### Käyttöliittymä
 Sovelluksella on neljä päänäkymää sekä kaksi sivunäkymää lisätietoja varten.\
 Päänäkymät ovat toteutettu omina luokkinaan ja sivunäkymät luodaan niistä käsin.\
-Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](python-app/src/app.py)
+Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](../app.py)
 
 #### Päänäkymät:
 
@@ -19,8 +19,8 @@ Pääluokkien lataamisesta ja näyttämisestä vastaa luokka [app.py](python-app
 - Merkinnän lisätietojen lisääminen
 
 Käyttöliittymä hakemisto sisältää näkymien lisäksi kaksi luokkaa jotka toteuttavat kotisivun graafisia elmenttejä.\
-Luokka [workout_element.py](python-app/src/gui/workout_element.py) toteuttaa laajennettavan elementin, johon talletetaan harjoituspäiväkirjan merkintäpäivä ja sisältö graafista esitystä varten.\
-Luokka [pillar_chart.py](python-app/src/gui/pillar_chart.py) toteuttaa sarakekaavion, joka laskee ja kuvaa käyttäjän harjoitukset edellisiltä kuukausilta. 
+Luokka [workout_element.py](../src/gui/workout_element.py) toteuttaa laajennettavan elementin, johon talletetaan harjoituspäiväkirjan merkintäpäivä ja sisältö graafista esitystä varten.\
+Luokka [pillar_chart.py](../src/gui/pillar_chart.py) toteuttaa sarakekaavion, joka laskee ja kuvaa käyttäjän harjoitukset edellisiltä kuukausilta. 
 
 ---
 
