@@ -12,6 +12,8 @@ Testien kattavuusraportti:\
 
 Ohjelman sovelluslogiikka on testattu täysin, poislukien main.py, joka alustaa ohjelman. Käyttöliittymäluokkia, sekä app.py luokkaa joka pitää huolen näkymän vaihtumisesta ei ole testattu kuin manuaalisesti. Eli ilman näitä haarautumakattavuus 100%.
 
+---
+
 ### JsonManagerTest
 Huolehtii luokan testaamisesta, sekä varmistaa, että DATA hakemistosta haetaan oikeat tiedostot.
 
