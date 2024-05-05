@@ -36,7 +36,7 @@ def start(c):
     c.run("python src/main.py") 
 ```
 
-Sovelluksen pitäisi olla nyt testattavissa. Seuraa [käyttöohjeet]() sivun ohjeita sovelluksen navigoimiseksi.
+Sovelluksen pitäisi olla nyt testattavissa. Seuraa [käyttöohjeet](python-app/dokumentaatio/käyttöohje.md) sivun ohjeita sovelluksen navigoimiseksi.
 
 ## Muut komennot
 ### Testit
