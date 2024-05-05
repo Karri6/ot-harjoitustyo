@@ -19,4 +19,8 @@
 - Graafinen historian esitys sarakekaaviona
 
 ### Kurssin viikko 7
-> suunnitelma: valmis työ
+- Arkkitehtuuri.md päivitetty
+- Käyttöohje lisätty
+- ReadMe päivitetty
+- Vaatimusmäärittelyn siistiminen
+- Docstring
