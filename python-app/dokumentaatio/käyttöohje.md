@@ -11,7 +11,7 @@ Vaihtoehtoisesti voit luoda oman **uuden käyttäjän** ja aloittaa tyhjältä a
 - Testikäyttäjän käyttäjänimi on: 'esimerkki'
   
 - Ja salasanana toimii: '1234'
-- Testikäyttäjälle on luotu joitain päiväkirjamerkintöjä huhtikuulle ja sarakekaavion havainnollistamisen vuoksi litannia tyhjiä tiedostoja maalis- sekä helmikuulle.
+- Testikäyttäjälle on luotu joitain päiväkirjamerkintöjä huhtikuulle ja sarakekaavion havainnollistamiseksi litannia tyhjiä tiedostoja maalis- sekä helmikuulle.
 - HUOM! Mikäli sovellusta käyttää testikäyttäjällä toukokuussa, näyttää sarakekaavio vain edellisen kahden kuukauden merkintöjä. Toukokuulle on siis itse lisättävä uusia merkintöjä. 
   > huomaa myös: Tiedostojen nimet eivät vastaa sovelluksen generoimia tiedostonimiä aivan 1:1 suhteen niiden manuaalisen muokkaamisen takia.
 ---
