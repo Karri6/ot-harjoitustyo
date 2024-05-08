@@ -1,6 +1,7 @@
 # Käyttöohje
 
-Seuraa näitä ohjeita, kun olet saanut ohjelman toimimaan.\ [ReadMe](../../README.md) tiedostossa on ohjeet ohjelman alustamiselle.
+Seuraa näitä ohjeita, kun olet saanut ohjelman toimimaan.\
+[ReadMe](../../README.md) tiedostossa on ohjeet ohjelman alustamiselle.
 ---
 ## Kirjautuminen
 Sovelluksen kokonaisvaltaisen testaamisen mielessä kannattaa kirjautua sisään valmiiksi luodulla **testikäyttäjällä**.\
