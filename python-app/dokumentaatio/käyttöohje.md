@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Seuraa näitä ohjeita, kun olet saanut ohjelman toimimaan.\
+Seuraa näitä ohjeita, kun olet saanut ohjelman ladattua ja alustettua.\
 [ReadMe](../../README.md) tiedostossa on ohjeet ohjelman alustamiselle.
 ---
 ## Kirjautuminen
