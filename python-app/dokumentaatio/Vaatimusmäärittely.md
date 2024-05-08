@@ -10,7 +10,7 @@ Sovellus on tarkoitettu henkilökohtaiseen kirjanpitoon, eikä todennäköisesti
 ## Toiminnallisuus
 
 ### Kirjautuminen (tehty)
-- **Uusi**-käyttäjä_ voi luoda sovellukseen uuden käyttäjätunnuksen, sovellus tarkistaa onko käyttäjää olemassa. 
+- _**Uusi**-käyttäjä_ voi luoda sovellukseen uuden käyttäjätunnuksen, sovellus tarkistaa onko käyttäjää olemassa. 
 - Jos käyttäjä on olemassa, hylätään käyttäjän ehdottama käyttäjänimi ja pyydetään esittämään uusi.
 - Jos käyttäjä ei ole olemassa, uuden käyttäjän luominen sallitaan.
 
