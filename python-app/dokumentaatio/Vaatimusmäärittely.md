@@ -29,9 +29,8 @@ Käyttäjä voi valita käyttöliittymän elementeillä uuden aktiviteetin ja ki
 > TKinter ei omaa helppoa tapaa (jos ollenkaan) tehdä drag and drop elementtejä, joten käytössä simppeli klikkaa ja vahvista napin painalluksella toimiva harjoituslistan päivittäminen
 
 
-## Käyttöliittymäluonnos
-Luonnoksessa on neljä näkymää, kirjautuminen, uusi käyttäjä, päänäkymä ja kirjausnäkymä. Sovelluksen flow alkaa luonnollisesi kirjautumisnäkymästä, edeten siitä käyttäjän toimintojen mukaisesti joko päänäkymään tai uuden käyttäjän luomiseen. Päänäkymän ja kirjausnäkymän välillä on mahdollista liikkua edestakaisin rajattomasti.
-[Luonnoksen kuva](käyttöliittymäluonnos.png)
+## Käyttöliittymä
+Luonnoksessa on neljä näkymää, kirjautuminen, uusi käyttäjä, päänäkymä ja kirjausnäkymä. Sovelluksen flow alkaa luonnollisesi kirjautumisnäkymästä, edeten siitä käyttäjän toimintojen mukaisesti joko päänäkymään tai uuden käyttäjän luomiseen. Päänäkymän ja kirjausnäkymän välillä on mahdollista liikkua edestakaisin rajattomasti. Näiden näkymien lisäksi sovelluksen käytettävyyden parantamiseksi sovellukseen on lisätty kaksi sivunäkymää. Ensimmäinen näistä on avattavissa pää-/kotinäkymän yhteydessä, kun käyttäjä haluaa tutkia koko harjoitushistoriaansa. Toinen ponnahtaa esiin käyttäjän lisätessä uutta merkintää ja pyytää käyttäjältä lisätietoja, esimerkiki lisätyn juoksulenkin kestoa. Muutoin käyttöliittymä vastaa sen [ensimmäistä luonnosta.](käyttöliittymäluonnos.png)
 
 ## Jatkokehitysideoita
 Sovellusta voisi laajentaa lisäämällä siihen esimerkiksi:
