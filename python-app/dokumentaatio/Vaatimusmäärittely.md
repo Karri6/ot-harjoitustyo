@@ -38,7 +38,7 @@ Sovellusta voisi laajentaa lisäämällä siihen esimerkiksi:
 - Mahdollisuuden tulostaa harjoituksen
 - Mahdollisuuden kirjata päivän kehonpainoa ja seurata sen kehitystä
 - Laskurin päivittäiselle ravinnon tarpeelle, riippuen liikunnan määrästä.
-
+- Mahdollisuus vapaalle merkinnälle päiväkirjaan ilman ennalta määrätyn liikkeen valitsemista.
 
 ## Muita huomioita
 - Tietokannan sijaan tiedon talletus toteutettu json tiedostoilla. 
